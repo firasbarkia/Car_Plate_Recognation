@@ -23,7 +23,6 @@ wheels/
 plateRecignation/
 plateRecignation_yolo/
 Self Driving Car.v3-fixed-small.yolov11/
-runs/
 
 # Virtual Environment
 venv/
@@ -44,9 +43,18 @@ venv.bak/
 .ipynb_checkpoints
 *.ipynb_checkpoints
 
-# Model files (large files - uncomment if you don't want to track them)
+# Model files (large files - ignore .pt files except weights in runs/)
 *.pt
 *.weights
+# Exception: allow model weights in runs/detect/*/weights/
+!runs/detect/**/weights/*.pt
+
+# Ignore runs/ directory but allow model weights
+runs/**
+!runs/detect/
+!runs/detect/**/
+!runs/detect/**/weights/
+!runs/detect/**/weights/*.pt
 
 # Dataset files (large files - uncomment if you don't want to track them)
 # plateRecignation/
