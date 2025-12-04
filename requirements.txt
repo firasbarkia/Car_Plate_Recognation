@@ -1,0 +1,11 @@
+ultralytics>=8.0.0
+streamlit>=1.28.0
+pillow>=10.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+easyocr>=1.7.0
+paddlepaddle>=2.5.0
+paddleocr>=2.7.0
+pytesseract>=0.3.10
+
